@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    ABOUT IV
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>about</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+ 
+
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fafafa; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fff; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#222; /* links colour */
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}   
+    
+a:hover {
+    color:#bad0f1; /* links hover colour */
+    cursor:pointer;
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}
+
+b, strong { font-weight:600; color:#444; }
+i, em { font-style:italic; }
+
+h1, h2, h3, h4, h5, h6 {
+    color:#000;
+    text-transform:uppercase!important;
+    text-align:left;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+blockquote {
+    padding-left:10px;
+    margin:0;
+    border-left:1px solid #eee;
+}
+
+/*-- container --*/
+
+container {
+    position:fixed;
+    width:calc(550px + 20px + 150px); 
+    /* left section + 20px gap + right section */
+    height:auto;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+#left, #right { display:inline-block; }
+#left, #header { width:550px; }
+#right { width:150px; }
+
+/*-- header --*/
+
+.title {
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    text-align:left!important;
+    letter-spacing:2px;
+    line-height:100%;
+    padding:10px;
+    color:#000; /* title colour */
+}
+
+.links { float:right; margin-top:-26px; }
+.links a { margin-right:10px; }
+
+/*-- about --*/
+
+#about {
+    max-height:350px;
+    overflow:scroll;
+    padding:10px 10px 0px 10px;
+    background:#fafafa; /* about section background */
+    border:1px solid #eee;
+}
+
+.icon { margin-bottom:10px; float:left; }
+.icon img { width:33px; height:33px; }
+
+.quote {
+    display:inline-block;
+    line-height:100%;
+    font-size:11px;
+    font-style:italic;
+    padding:10px;
+    margin-left:10px;
+    margin-bottom:15px;
+    background:#fff; /* quote background */
+    border:1px solid #eee;
+}
+
+/*-- categories --*/
+
+.categories {
+    position:relative;
+    margin:0;
+    padding:0px 10px 0px 10px;
+    border:1px solid #eee;
+    border-top:none;
+}
+
+.categories h1 { display:inline-block; margin-right:10px; }
+
+/*-- info --*/
+
+#right { 
+    left:570px; 
+    top:0;
+    position:absolute;
+}
+
+.info { position:relative; margin-top:20px; }
+.info:first-of-type { margin-top:0!important; }
+
+.info h1 {
+    line-height:100%;
+    padding:10px;
+    margin:0;
+    text-align:center;
+    background:#fafafa; /* sidebar heading background colour */
+    border:1px solid #eee;
+    border-bottom:2px solid #aaa;
+}
+
+.info ul { 
+    max-height:157px;
+    overflow:scroll;
+    margin-left:-40px; 
+    margin-top:0px; 
+}
+
+.info ul li { list-style:none; margin:0; }
+
+.info li {
+    line-height:100%;
+    padding:10px;
+    margin-top:-10px;
+    background:#fafafa; /* even info background colour */
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+    padding-right:10px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.info li:nth-child(odd) { background:#fff; } /* odd info background */
+
+.info h2 {
+    display:inline;
+    margin:0;
+    padding-right:5px;
+    text-transform:uppercase!important;
+    float:left!important;
+    font-size:10px;
+    font-weight:400;
+    letter-spacing:0.5px;
+    color:#444; /* sidebar heading colour */
+}
+
+.info h2 i { margin-right:5px; height:10px; width:10px; }
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<container>
+
+<div id="left">
+
+<div id="header">
+    <div class="title">outline info</div><!-- title -->
+    <div class="links">
+    <!-- feel free to add more! -->
+        <a href="maraiamiller.tumblr.com">index</a>
+        <a href="facebook.com/maraiasmiller">message</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="/archive">archive</a>
+    </div>
+</div>
+
+<div id="about">
+
+<!-- if you don't want the icon and/or quote, remove these lines -->
+<!-- the default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want -->
+    <div class="icon"><img src="https://64.media.tumblr.com/3c931d818f95e6bd771c8985884a8132/aa6dba1fc30357b1-bb/s128x128u_c1/5bf0bda1e8278419baa6801ff75c847dc0dfb41c.jpg"/></div>
+    <div class="quote">[MSM] 23, Sydney</div>
+<!-- up to here -->
+        
+<div style="display:block;"> 
+<!-- this is where you about text goes -->
+  powerpoint <a href="https://docs.google.com/presentation/d/1f1pGVqK4LAb-DnMHyiKI8-GoVi-g9KUvpPylFmDcBrk/edit?usp=sharing">portfolio</a> 
+    <blockquote>PROJECTCARSON</blockquote>
+
+    <b>Citation; Chicago - Google Books</b><br>
+
+<br>>The Law and Practice of Trademark Transactions: A Global and Local Outlook. United Kingdom: Edward Elgar Publishing Limited, 2016.
+
+<br>>Scientific Directory and Annual Bibliography. United States: U.S. Department of Health, Education and Welfare, 1991.
+
+<br>>Braby, Michael. Butterflies of Australia: Their Identification, Biology and Distribution. Australia: CSIRO PUBLISHING, 2000.
+
+<br>>Catalog of Cell Lines. United States: U.S. Department of Health and Human Services, Public Health Service, National Institutes of Health, 1982.
+
+<br>>Disease, Colonialism, and the State: Malaria in Modern East Asian History. Hong Kong: Hong Kong University Press, 2009.
+
+<br>>Progress in Nucleic Acid Research and Molecular Biology. United States: Elsevier Science, 1996.
+
+<br>>Modified Nucleic Acids in Biology and Medicine. Germany: Springer International Publishing, (n.d.).
+
+<br>>USPTO Image File Wrapper Petition Decisions 0425. N.p.: Uspto, (n.d.).
+
+<br>>Codrington, Robert Henry. The Melanesian Languages. United Kingdom: Clarendon Press, 1885.
+
+<br>>2017 MATRIX Annals. Germany: Springer International Publishing, 2019.
+
+<br>>Evolution and Impact of Transposable Elements. Netherlands: Springer Netherlands, 2012.
+
+<br>>Cumulated Index Medicus. United States: U.S. Department of Health and Human Services, Public Health Service, National Institutes of Health, National Library of Medicine., 1997.
+
+<br>>Proceedings of the County Legislature of Rockland County. United States: n.p., 1999.
+
+<br>>The Phantom Church and Other Stories from Romania. United States: University of Pittsburgh Press, 1996.
+
+<br>>Structure. United Kingdom: Cell Press, 2003.
+
+<br>>The Harvard Lampoon. United States: Harvard Lampoon, 1883.
+
+<br>>Ticknor, M. Elizabeth., O'Connor, Kate. Heroic Fantasy Short Stories. United Kingdom: Flame Tree Publishing, 2018.
+
+<br>>Encyclopedia of Women and Baseball. United States: McFarland, Incorporated, Publishers, 2016.
+
+<br>>Library of Congress Subject Headings. United States: Library of Congress, 2011.
+
+<br>>Evolutionary Biology. Germany: Springer US, 2012.
+
+<br>>Hackett, Kathleen. Country Living Eating Outdoors--sensational Recipes for Cookouts, Picnics, and Take-along Food. United States: Hearst Books, 2008.
+
+<br>>Molecular Evolution of Viruses — Past and Present. United States: Springer US, 2012.
+
+<br>>Kaplan, Robert M.., Saccuzzo, Dennis P.. Psychological Testing: Principles, Applications, and Issues. United States: Cengage Learning, 2012.
+
+<br>>Voices In the Cellar. N.p.: GrahamR Writings LLC, 2019.
+
+<br>>Biddle, George. Tahitian Journal. United States: University of Minnesota Press, 1999.
+
+<br>>Moyano, María Elena. The autobiography of Maraia Elena Moyano : the life and death of a Peruvian activist. United States: University Press of Florida, 2000.
+
+<br>>The Build Master: Microsoft'S Software Configuration Management Best Practices. India: Pearson Education, 2006.
+
+<br>>Ostby, Anne. Pieces of Happiness: A Novel of Friendship, Hope and Chocolate. United Kingdom: Transworld, 2017.
+
+<br>>RNA Polymerase and Associated Factors, Part C. Netherlands: Elsevier Science, 2003.
+
+<br>>Long Non-Coding RNAs. Germany: Springer Berlin Heidelberg, 2011.
+
+<br>>Mikoley, Kate. Aboard the Santa Maraia. N.p.: Gareth Stevens Publishing, (n.d.).
+
+<br>>Descheemaker, J.. Som Maraia. N.p.: n.p., 1985.
+
+<br>>Collins, Graham. Maraia Lives in a Fijian Village. Australia: Longman Paul, 1982.
+
+<br>>Maraia, Mark. Relationships Are Everything! Growing Your Business One Relationship at a Time. N.p.: Professional Services Publishing, 2009.
+
+<br>Maraia, Mark M.. Rainmaking Made Simple: What Every Professional Must Know. United States: Professional Services Pub., 2003.
+
+<!-- end about text -->
+</div>
+
+</div>
+
+<!-- template:
+<div class="categories">
+    <h1>subtitle</h1>
+    ceontent (etc. links)
+</div>
+
+you can have anything here - the example is links<a href="">title</a>
+-->
+
+<div class="categories">
+    <h1>Misc.</h1>
+    <a href="https://data.namedog.com/Dropped/COM/2017/08-10-2017-COM.php">who is dog</a>, 
+</div>
+
+<div class="categories">
+    <h1>design</h1>
+    <a href="https://www.technicolorcreative.com/globalcreativecommunity/">techni colour creative</a>, 
+    <a href="https://www.themill.com/">the mill</a>, 
+    <a href="https://keenanlam.com/?utm_source=hoobe&utm_medium=social">keenan lam</a>, 
+    <a href="https://kartinkin.net/pics/14369-kislotnyj-art.html">kartinkin.net</a>, 
+    <a href="https://egg.design/">egg.design</a>
+</div>
+
+</div>
+
+<div id="right">
+
+<!-- template: 
+    <li><h2><i class="[icon name] fa-fw"></i>subject:</h2> content</li>
+    or
+    <li><h2><i class="[icon name] fa-fw"></i></h2> content</li>
+
+if you don't want the icon, just remove the <i class> section. to change the icon, go to https://fontawesome.com/icons. keep the fa-fw at the end to align them all. 
+-->
+
+<div class="info">
+    <h1>Tags</h1>
+    <ul>
+    <li><h2><i class="far fa-user fa-fw"></i>Google:</h2> millermaraia96</li>
+    <li><h2><i class="fas fa-venus fa-fw"></i>identifier:</h2> 641</li>
+    <li><h2><i class="far fa-heart fa-fw"></i>aesthetics:</h2> terrorwave</li>
+    <li><h2><i class="fas fa-birthday-cake fa-fw"></i>METHOD:</h2> Rainmaker</li>
+    <li><h2><i class="far fa-compass fa-fw"></i>scholar-no.:</h2> 0155-2147</li>
+    </ul>
+</div>
+
+<div class="info">
+    <h1>subtitle</h1>
+    <ul>
+    <li><h2><i class="fas fa-book fa-fw"></i></h2> content</li>
+    <li><h2><i class="fas fa-paint-brush fa-fw"></i></h2> content</li>
+    <li><h2><i class="fas fa-crop fa-fw"></i></h2> content</li>
+    <li><h2><i class="fas fa-code fa-fw"></i></h2> content</li>
+    <li><h2><i class="fas fa-music fa-fw"></i></h2> content</li>
+    </ul>
+</div>
+
+</div>
+
+</container>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="https://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>
